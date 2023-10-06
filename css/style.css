@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(../image/540089-programmers-AutoHotkey-code-programming-laptop-ThinkPad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+body::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+/* start nav */
+.nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #faa307;
+    padding: 0 10px;
+    box-shadow: 1px 1px 10px 1px inset;
+}
+.nav h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.nav button{
+    padding: 6px;
+    font-size: 1.5rem;
+    background-color: #faa308;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* end nav */
+/* start content */
+.content{
+    display: flex;
+    gap: 20px;
+    margin: 120px 25px;
+    color: white;
+}
+.content .left{
+    flex: 1;
+}
+.content .left h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.content .left p{
+    color: rgba(255, 255, 255, 0.404);
+    line-height: 1.6;
+    letter-spacing: 1.2;
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+.content .left button{
+    padding: 6px 18px ;
+    border-radius: 12px;
+    color: white;
+    background-color: #faa307;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+} 
+.content .right{
+    flex: 1;
+}
+.content .right form{
+    background-color: rgba(0,0,0,0.7);
+    padding: 1rem;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.content .right form .btn{
+    background-color: transparent;
+    border: navajowhite;
+    border-bottom: 1px solid #faa308;
+    color: white;
+    outline: none;
+}
+.content .right form .sub{
+    background-color: #faa308;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.content .right form .sign{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.content .right form .logos i{
+    color: #faa308;
+    font-size: 23px;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+/* end content */
+@media screen and (max-width:876px) {
+    .nav ul{
+        display: none;
+    }
+    .nav h1{
+        font-size: 20px;
+    }
+    .nav button{
+        padding: 4px;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .content{
+        flex-direction: column;
+        margin: 12px 15px;
+    }
+    .content .left{
+        text-align: center;
+    }
+    .content .left h2{
+        font-size: 2rem;
+    }
+    .content .left p{
+        display: none;
+    }
+    .content .left button{
+        display: none;
+    }
+    .content .right form{
+        width: 80%;
+    }
+}
